@@ -54,6 +54,28 @@ main{
 
 }
 
+.preco{
+    font-weight: bold;
+    color: #ffabab;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.adicionar{
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background-color: #ffb5e8 ;
+    color: white;
+    padding: 1rem 0;
+}
 /*Adicionar Media Query para tornar o projeto responsivo */
 @media(min-width: 768px){
 main{
