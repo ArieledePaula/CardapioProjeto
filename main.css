@@ -11,3 +11,57 @@ header{
     text-align: center;
     padding: 1rem 0;
 }
+
+nav a{
+    color: white;
+    background-color: #b28dff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    border-radius: 4px;
+
+}
+
+nav a:hover{
+background-color: #a79aff;
+}
+
+main{
+    width: 80%;
+    margin: 2rem auto;
+
+}
+
+.categoria{
+    margin-bottom: 2rem;
+}
+.produto{
+    background-color: #fbe4ff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produto  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+}
+
+/*Adicionar Media Query para tornar o projeto responsivo */
+@media(min-width: 768px){
+main{
+    width: 60%;
+}
+.categoria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 1rem;
+}
+}
