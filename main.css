@@ -53,6 +53,24 @@ main{
     margin-bottom: 1rem;
 
 }
+.bebidas{
+    background-color: #fbe4ff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bebidas  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+}
 
 .preco{
     font-weight: bold;
@@ -70,6 +88,42 @@ main{
     cursor: pointer;
 }
 
+.pedido{
+    background-color: #fbe4ff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#lista-pedido{
+    list-style: none;
+    padding: 0;
+}
+
+#finalizar-pedido{
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato{
+    text-align: center;
+    margin-top: 2rem;   
+}
+
+.redes-sociais a{
+    display: inline-block;
+    background-color: #fbe4ff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0.5rem;
+
+}
+
 footer{
     text-align: center;
     background-color: #ffb5e8 ;
@@ -77,13 +131,30 @@ footer{
     padding: 1rem 0;
 }
 /*Adicionar Media Query para tornar o projeto responsivo */
-@media(min-width: 768px){
-main{
-    width: 60%;
+@media (min-width: 768px){
+    main{
+        width: 60%;
+    }
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .categoria h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    
 }
-.categoria{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 1rem;
-}
+
+@media(max-width:768px){
+    /*Para telas pequenas*/
+    .categoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .categoria h2 {
+        text-align: center;
+    }
 }
