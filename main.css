@@ -12,6 +12,18 @@ header{
     padding: 1rem 0;
 }
 
+.banner{
+    background-image: url(Imagens/cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(#ffb5e8);
+}
 nav a{
     color: white;
     background-color: #b28dff;
