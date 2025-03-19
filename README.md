@@ -1,4 +1,5 @@
 Documentação do Projeto: Cafetaria Vovó Maria
+
 1. Visão Geral
 Objetivo
 O objetivo deste projeto é criar um cardápio online para uma cafeteria, permitindo aos clientes visualizar os produtos oferecidos (bebidas, lanches, doces, etc.), com informações detalhadas sobre cada item, como descrição, preço e imagens.
